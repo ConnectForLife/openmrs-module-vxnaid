@@ -97,7 +97,7 @@
         <org.openmrs.module.emrapi.metadata.MetadataPackageConfig>
             <filenameBase>17_Other_substances_concepts</filenameBase>
             <groupUuid>d8be92a7-bd7f-423c-b6c3-ae294f8a8fa2</groupUuid>
-            <version>1</version>
+            <version>2</version>
             <importMode>MIRROR</importMode>
         </org.openmrs.module.emrapi.metadata.MetadataPackageConfig>
     </packages>
