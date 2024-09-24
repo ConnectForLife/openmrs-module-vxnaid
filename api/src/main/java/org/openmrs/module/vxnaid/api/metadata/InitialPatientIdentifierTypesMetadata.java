@@ -16,7 +16,7 @@ public class InitialPatientIdentifierTypesMetadata extends VersionedMetadataBund
 
   @Override
   public int getVersion() {
-    return 1;
+    return 2;
   }
 
   @Override
@@ -27,6 +27,7 @@ public class InitialPatientIdentifierTypesMetadata extends VersionedMetadataBund
   @Override
   protected void installNewVersion() throws Exception {
     createNewPatientIdentifier("National ID", "62882f78-4382-11ef-92cb-0242ac1d0002");
+    createNewPatientIdentifier("Child Number", "8529d3ec-d844-4fad-a9c2-8f9b02b1ed40");
   }
 
   private void createNewPatientIdentifier(String name, String uuid) {
