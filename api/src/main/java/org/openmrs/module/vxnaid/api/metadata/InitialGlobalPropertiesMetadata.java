@@ -637,7 +637,8 @@ public class InitialGlobalPropertiesMetadata extends VersionedMetadataBundle {
           + "      \"inputType\":\"radio\",\n"
           + "      \"options\":[\n"
           + "         \"Yes\",\n"
-          + "         \"No\"\n"
+          + "         \"No\",\n"
+          + "         \"I don't know\"\n"
           + "      ]\n"
           + "   },\n"
           + "   {\n"
@@ -1068,7 +1069,6 @@ public class InitialGlobalPropertiesMetadata extends VersionedMetadataBundle {
           + "      ]\n"
           + "   }\n"
           + "]";
-
   private static final String BIOMETRIC_API_CONFIG_SUBSTANCE_GROUPS_CONFIG_NAME =
       "biometric.api.config.substanceGroups";
   private static final String BIOMETRIC_API_CONFIG_SUBSTANCE_GROUPS_DESC =
