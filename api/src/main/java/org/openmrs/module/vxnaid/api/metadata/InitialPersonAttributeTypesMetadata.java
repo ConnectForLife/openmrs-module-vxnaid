@@ -18,7 +18,7 @@ import org.openmrs.module.metadatadeploy.bundle.VersionedMetadataBundle;
 public class InitialPersonAttributeTypesMetadata extends VersionedMetadataBundle {
   @Override
   public int getVersion() {
-    return 2;
+    return 3;
   }
 
   @Override
@@ -38,6 +38,14 @@ public class InitialPersonAttributeTypesMetadata extends VersionedMetadataBundle
         "Father's name", "9104069d-2560-4d5a-b726-e4921c87e345", "Child father's name");
     createNewPersonAttributeType(
         "Child category", "d5e7bcbc-565c-11ef-9ee3-0242c0a89002", "Child's category");
+    createNewPersonAttributeType(
+        "Mother's first name", "267bfc66-7f3c-11ef-92f3-0242c0a89002", "Mother's first name");
+    createNewPersonAttributeType(
+        "Mother's last name", "3f5477c5-7c21-4e92-9104-908d9dcbfb98", "Mother's first name");
+    createNewPersonAttributeType(
+        "Father's first name", "5c16d27c-7f3c-11ef-92f3-0242c0a89002", "Father's first name");
+    createNewPersonAttributeType(
+        "Father's last name", "20474324-194f-491d-b9cf-d2dd1f86fada", "Father's first name");
   }
 
   private void createNewPersonAttributeType(String name, String uuid, String description) {
