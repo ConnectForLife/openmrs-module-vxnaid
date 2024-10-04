@@ -100,5 +100,11 @@
             <version>2</version>
             <importMode>MIRROR</importMode>
         </org.openmrs.module.emrapi.metadata.MetadataPackageConfig>
+        <org.openmrs.module.emrapi.metadata.MetadataPackageConfig>
+            <filenameBase>18_Adverse_Effects</filenameBase>
+            <groupUuid>431ea254-3d95-4946-bdd6-4a010ed351a4</groupUuid>
+            <version>1</version>
+            <importMode>MIRROR</importMode>
+        </org.openmrs.module.emrapi.metadata.MetadataPackageConfig>
     </packages>
 </org.openmrs.module.emrapi.metadata.MetadataPackagesConfig>
