@@ -18,7 +18,7 @@ function generateNewQRCodes() {
   });
 
   for (let row = 0; row < numQRCodes; ++row) {
-    const uuid = crypto.randomUUID();
+    const uuid = uuidv4();
     qrcode.clear();
     qrcode.makeCode(uuid);
 
