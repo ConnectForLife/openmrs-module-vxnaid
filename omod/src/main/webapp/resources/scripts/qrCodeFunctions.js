@@ -63,4 +63,14 @@ function generatePatientQRCode(patientId, uuid) {
   doc.text(uuid, x, y + margin + qrCodeSize, { horizontalScale: 0.45});
 
   doc.save('QR-' + patientId + '.pdf');
+
+  hideGenerateQRDialog();
+}
+
+function showGenerateQRDialog() {
+  jq("#generate-qr-code-dialog").show();
+}
+
+function hideGenerateQRDialog() {
+  jq("#generate-qr-code-dialog").hide();
 }

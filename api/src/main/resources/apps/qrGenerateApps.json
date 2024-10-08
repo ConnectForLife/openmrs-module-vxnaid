@@ -1,0 +1,39 @@
+[
+  {
+    "id" : "cflui.genNewQRCodes",
+    "description" : "Home page button to generate new QR codes.",
+    "order" : 99,
+    "extensions" : [ {
+      "id" : "cflui.genNewQRCodes.homepageLink",
+      "extensionPointId" : "org.openmrs.cfl.homepageLink",
+      "type" : "script",
+      "label" : "Generate QR Codes",
+      "icon" : "icon-qrcode",
+      "order" : 99,
+      "script" : "generateNewQRCodes()"
+    } ]
+  },
+  {
+    "id": "cflui.genPatientQRCode",
+    "description": "Patient action to generate QR code for them.",
+    "extensions": [
+      {
+        "id": "cflui.genPatientQRCode.patientAction",
+        "extensionPointId": "patientDashboard.overallActions",
+        "order": 99,
+        "label": "Generate QR Code",
+        "icon": "icon-qrcode",
+        "type" : "script",
+        "script" : "showGenerateQRDialog()"
+      },
+      {
+        "id": "cflui.genPatientQRCode.dialog",
+        "extensionPointId": "patientDashboard.includeFragments",
+        "extensionParams": {
+          "provider": "vxnaid",
+          "fragment": "generateQrCode"
+        }
+      }
+    ]
+  }
+]

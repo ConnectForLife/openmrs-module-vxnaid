@@ -12,7 +12,7 @@
     <div class="dialog-content">
         <p class="dialog-instructions">${ ui.message("coreapps.task.deletePatient.message", ui.encodeHtmlContent(ui.format(patient.patient))) }</p>
 
-        <label for="vmp-delete-reason">${ ui.message("cfl.vmp.deletePatient.reason.label") }: </label>
+        <label for="vmp-delete-reason">${ ui.message("cfl.vxnaid.deletePatient.reason.label") }: </label>
         <input type="text" id="vmp-delete-reason">
 
         <br>
