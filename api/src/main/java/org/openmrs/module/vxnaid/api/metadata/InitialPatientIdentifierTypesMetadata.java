@@ -26,17 +26,21 @@ public class InitialPatientIdentifierTypesMetadata extends VersionedMetadataBund
 
   @Override
   protected void installNewVersion() throws Exception {
-    createNewPatientIdentifier("National ID", "62882f78-4382-11ef-92cb-0242ac1d0002");
-    createNewPatientIdentifier("Child Number", "8529d3ec-d844-4fad-a9c2-8f9b02b1ed40");
+    createNewPatientIdentifier("National ID", "62882f78-4382-11ef-92cb-0242ac1d0002", true);
+    createNewPatientIdentifier("Child Number", "8529d3ec-d844-4fad-a9c2-8f9b02b1ed40", false);
   }
 
-  private void createNewPatientIdentifier(String name, String uuid) {
+  private void createNewPatientIdentifier(String name, String uuid, boolean isUnique) {
     PatientService patientService = Context.getPatientService();
 
     if (patientService.getPatientIdentifierTypeByName(name) == null) {
       PatientIdentifierType patientIdentifierType = new PatientIdentifierType();
       patientIdentifierType.setName(name);
       patientIdentifierType.setUuid(uuid);
+      patientIdentifierType.setUniquenessBehavior(
+          isUnique
+              ? PatientIdentifierType.UniquenessBehavior.UNIQUE
+              : PatientIdentifierType.UniquenessBehavior.NON_UNIQUE);
       patientService.savePatientIdentifierType(patientIdentifierType);
     }
   }
