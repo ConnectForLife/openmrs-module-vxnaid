@@ -18,12 +18,15 @@ function generateNewQRCodes() {
   });
 
   for (let row = 0; row < numQRCodes; ++row) {
-    const uuid = uuidv4();
+    const uuid = generateChildId();
     qrcode.clear();
     qrcode.makeCode(uuid);
 
     doc.addImage(qrCanvasContainer.getElementsByTagName('canvas')[0], 'PNG', x + qrAlignment, y, qrCodeSize, qrCodeSize);
-    doc.text(uuid, x, y + margin + qrCodeSize, { horizontalScale: 0.45});
+
+    const textWidth = doc.getTextWidth(uuid);
+    const centeredX = x + qrAlignment + (qrCodeSize - textWidth) / 2;
+    doc.text(uuid, centeredX + 10, y + margin + qrCodeSize, { horizontalScale: 0.45});
 
     x += columnWidth;
 
@@ -67,6 +70,17 @@ function generatePatientQRCode(patientId, uuid) {
   hideGenerateQRDialog();
 }
 
+function generateChildId() {
+  const identifierLength = 8;
+  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  let result = '';
+  for (let i = 0; i < identifierLength; i++) {
+    const randomIndex = Math.floor(Math.random() * chars.length);
+    result += chars[randomIndex];
+  }
+  return result;
+}
+
 function showGenerateQRDialog() {
   jq("#generate-qr-code-dialog").show();
 }
@@ -74,3 +88,4 @@ function showGenerateQRDialog() {
 function hideGenerateQRDialog() {
   jq("#generate-qr-code-dialog").hide();
 }
+
