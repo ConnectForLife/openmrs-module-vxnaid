@@ -2,10 +2,10 @@ function generateNewQRCodes() {
   const { jsPDF } = window.jspdf;
   const doc = new jsPDF();
   const numQRCodes = 42;
-  const qrCodeSize = 30;
+  const qrCodeSize = 45;
   const columnWidth = 60;
   const qrAlignment = 7;
-  const margin = 5;
+  const margin = 10;
 
   let x = margin;
   let y = margin;
@@ -48,9 +48,9 @@ function generateNewQRCodes() {
 function generatePatientQRCode(patientId, uuid) {
   const { jsPDF } = window.jspdf;
   const doc = new jsPDF();
-  const qrCodeSize = 30;
+  const qrCodeSize = 45;
   const qrAlignment = 7;
-  const margin = 5;
+  const margin = 10;
 
   let x = margin;
   let y = margin;
