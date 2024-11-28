@@ -31,12 +31,6 @@ public class InitialPersonAttributeTypesMetadata extends VersionedMetadataBundle
     createNewPersonAttributeType(
         "Birth Weight", "4f9b97bf-4381-11ef-92cb-0242ac1d0002", "Child weight at birth");
     createNewPersonAttributeType(
-        "Mother's name", "8d871d18-c2cc-11de-8d13-0010c6dffd0f", "Child mother's name");
-    createNewPersonAttributeType(
-        "Child's name", "f1839002-417c-4b07-8da3-f58a36fffd25", "Child's name");
-    createNewPersonAttributeType(
-        "Father's name", "9104069d-2560-4d5a-b726-e4921c87e345", "Child father's name");
-    createNewPersonAttributeType(
         "Child category", "d5e7bcbc-565c-11ef-9ee3-0242c0a89002", "Child's category");
     createNewPersonAttributeType(
         "Mother's first name", "267bfc66-7f3c-11ef-92f3-0242c0a89002", "Mother's first name");
