@@ -19,8 +19,8 @@
         <org.openmrs.module.emrapi.metadata.MetadataPackageConfig>
             <filenameBase>03_VMP_Configure_Metadata_Apps</filenameBase>
             <groupUuid>3b6bad6d-b6e4-4111-a8b1-1ffddeba835d</groupUuid>
-            <version>2</version>
-            <importMode>MIRROR</importMode>
+            <version>3</version>
+            <importMode>PARENT_AND_CHILD</importMode>
         </org.openmrs.module.emrapi.metadata.MetadataPackageConfig>
         <org.openmrs.module.emrapi.metadata.MetadataPackageConfig>
             <filenameBase>04_CfL_Reporting_UI_Apps</filenameBase>
