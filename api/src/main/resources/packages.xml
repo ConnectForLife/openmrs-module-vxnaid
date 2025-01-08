@@ -118,5 +118,11 @@
             <version>1</version>
             <importMode>MIRROR</importMode>
         </org.openmrs.module.emrapi.metadata.MetadataPackageConfig>
+        <org.openmrs.module.emrapi.metadata.MetadataPackageConfig>
+            <filenameBase>21_Age_Vxnaid_concepts</filenameBase>
+            <groupUuid>ef363743-79b0-439a-b50f-761723e6139f</groupUuid>
+            <version>1</version>
+            <importMode>MIRROR</importMode>
+        </org.openmrs.module.emrapi.metadata.MetadataPackageConfig>
     </packages>
 </org.openmrs.module.emrapi.metadata.MetadataPackagesConfig>
